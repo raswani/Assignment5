@@ -1,14 +1,15 @@
 package DatabaseAsn5Rest;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.FetchType;
 
 
 @Entity
 public class tower {
 
 	@Id
+	@Column(name="tid")
 	private int id;
 	private String name;
 	private double height;
